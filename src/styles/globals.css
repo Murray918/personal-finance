@@ -1,9 +1,9 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -104,4 +104,73 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+/* Colors */
+
+/*  --primary-color: #6A5C8A; purple
+  --secondary-color: #C47676; red
+  --background-color: #FDD1BB; white
+  --tertiary-color: #C47676; red 
+ */
+:root {
+  --primary-color: #749EAB;
+  --secondary-color: #C47676; /* 749EAB */
+  --background-color: #f9f0ec;
+  --tertiary-color: #6A5C8A;
+}
+
+/* Box shadows */
+.shadow {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Margins and padding */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Typography */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: var(--background-color);
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--primary-color);
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  border-bottom-color: var(--primary-color);
 }
